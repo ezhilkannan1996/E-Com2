@@ -1,0 +1,17 @@
+<div class="order-list">
+  <div class="order-card" *ngFor="let order of placedOrders">
+    <div class="order-info">
+      <h3>Order ID: {{ order.id }}</h3>
+      <p>Date: {{ order.orderDate | date }}</p>
+      <p>Total Price: &#x20B9; {{ order.totalPrice }}</p>
+    </div>
+    <div class="ordered-products">
+      <h4>Ordered Products:</h4>
+      <ul>
+        <li *ngFor="let product of order.products">
+          {{ product.name }} (Price: &#x20B9; {{ product.price }})
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

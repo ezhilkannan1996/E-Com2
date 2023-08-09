@@ -1,0 +1,10 @@
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .mat-list-item {
+    cursor: pointer;
+  }
+      

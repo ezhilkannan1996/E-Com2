@@ -1,0 +1,8 @@
+<div class="sidebar">
+  <h3>Product Categories</h3>
+  <mat-list>
+    <mat-list-item *ngFor="let category of categories" (click)="onCategorySelected(category)">
+      {{ category }}
+    </mat-list-item>
+  </mat-list>
+</div>
